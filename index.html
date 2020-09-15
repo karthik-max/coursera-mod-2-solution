@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .demo {
+        text-align: center;
+        display: none;
+      }
+      .container {
+        display: flex;
+      }
+      .abc {
+        margin: 5px 5px;
+        border: 2px solid black;
+        background-color: lightgrey;
+      }
+      .abc h3 {
+        text-align: center;
+      }
+      @media screen and (min-width: 992px) {
+        #desk {
+          display: block;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        #tab {
+          display: block;
+        }
+        .container {
+          display: block;
+        }
+        #sect1 {
+          display: inline-block;
+          width: 48%;
+        }
+        #sect2 {
+          display: inline-block;
+          width: 48%;
+        }
+
+      }
+      @media screen and (max-width: 767px) {
+        #mob {
+          display: block;
+        }
+        .container {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Coursera module 2 Assignment</h1>
+    <div class="demo" id="desk"><p>Desktop view</p></div>
+    <div class="demo" id="tab"><p>Tablet view</p></div>
+    <div class="demo" id="mob"><p>Mobile view</p></div>
+    <div class="container">
+      <section class="abc" id="sect1">
+        <h3>demo1</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Necessitatibus et, animi atque suscipit iusto rerum soluta cumque
+          molestias incidunt excepturi commodi debitis nesciunt impedit beatae
+          facilis obcaecati, quidem molestiae aliquid ipsum saepe error. Facilis
+          cupiditate id dignissimos veniam veritatis quia eligendi sunt et unde
+          placeat doloribus architecto, sint a! Suscipit, non! Omnis facilis
+          quaerat iste aperiam, assumenda maxime vero minus.
+        </p>
+      </section>
+      <section class="abc" id="sect2">
+        <h3>demo2</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+          ducimus, similique quis dolores cupiditate corrupti iure minus
+          quibusdam, neque ipsa error quae nulla est. Consequuntur incidunt
+          ullam alias culpa aliquid dicta iste assumenda officiis distinctio
+          unde ab aspernatur optio, laborum eos reiciendis nesciunt, illum,
+          dignissimos repudiandae voluptates nulla dolores natus molestias
+          totam. Aut exercitationem vitae consequuntur? Iusto recusandae dolorum
+          ducimus.
+        </p>
+      </section>
+      <section class="abc" id="sect3">
+        <h3>demo3</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+          ducimus, similique quis dolores cupiditate corrupti iure minus
+          quibusdam, neque ipsa error quae nulla est. Consequuntur incidunt
+          ullam alias culpa aliquid dicta iste assumenda officiis distinctio
+          unde ab aspernatur optio, laborum eos reiciendis nesciunt, illum,
+          dignissimos repudiandae voluptates nulla dolores natus molestias
+          totam. Aut exercitationem vitae consequuntur? Iusto recusandae dolorum
+          ducimus.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
